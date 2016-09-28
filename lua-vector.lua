@@ -4,7 +4,7 @@ vector = setmetatable({}, metavector);
 metavector.__metatable = vector;
 
 function metavector:__call(x, y, z)
-	return setmetatable({x = x + 0.0, y = y + 0.0, z = z + 0.0}, vector);
+	return setmetatable({x = (x or 0.0) + 0.0, y = (y or 0.0) + 0.0, z = (z or 0.0) + 0.0}, vector);
 end
 
 vector.__index = vector;
