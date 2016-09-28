@@ -19,9 +19,7 @@ function vector:__sub(other)
 end
 
 function vector:__mul(other)
-	return type(self) == "number" and vector(self * other.x, self * other.y, self * other.z) or
-	       type(other) == "number" and vector(self.x * other, self.y * other, self.z * other) or
-	       self.x * other.x + self.y * other.y + self.z * other.z;
+	return type(self) == "number" and vector(self * other.x, self * other.y, self * other.z) or type(other) == "number" and vector(self.x * other, self.y * other, self.z * other) or self.x * other.x + self.y * other.y + self.z * other.z;
 end
 
 function vector:__pow(other)
