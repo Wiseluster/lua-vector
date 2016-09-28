@@ -12,7 +12,7 @@ print(a - b); -- Prints the difference of a and b
 print(a * b); -- Prints the scalar product of a and b
 print(a * 2); -- Prints a times 2
 print(3 * a); -- Prints a times 3
-print(a ^ b); -- Prints the vector product of a and b
+print(a % b); -- Prints the vector product of a and b
 print(-a); -- Prints the opposite vector of a
 print(a == b); -- Prints the boolean value of the proposition "a equals b"
 print(#a); -- Prints the length of a

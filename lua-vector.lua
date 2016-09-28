@@ -22,7 +22,7 @@ function vector:__mul(other)
 	return type(self) == "number" and vector(self * other.x, self * other.y, self * other.z) or type(other) == "number" and vector(self.x * other, self.y * other, self.z * other) or self.x * other.x + self.y * other.y + self.z * other.z;
 end
 
-function vector:__pow(other)
+function vector:__mod(other)
 	return vector(self.y * other.z - self.z * other.y, self.z * other.x - self.x * other.z, self.x * other.y - self.y * other.x);
 end
 
