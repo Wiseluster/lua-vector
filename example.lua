@@ -2,8 +2,8 @@
 
 local vector = require("vector"); -- Loads the module "lua-vector"
 
-local a = vector(3, 4, 2);
-local b = vector(5, -1, 0.5);
+local a = vector.new(3, 4, 2);
+local b = vector.new(5, -1, 0.5);
 
 print(a);
 print(b);
