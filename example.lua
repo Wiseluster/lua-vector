@@ -1,6 +1,6 @@
 #!/usr/bin/env lua
 
-require("lua-vector"); -- Loads the module "lua-vector"
+local vector = require("vector"); -- Loads the module "lua-vector"
 
 local a = vector(3, 4, 2);
 local b = vector(5, -1, 0.5);
