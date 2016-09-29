@@ -1,5 +1,5 @@
 local metavector = {};
-local vector = setmetatable({}, metavector);
+vector = setmetatable({}, metavector);
 
 metavector.__metatable = vector;
 
